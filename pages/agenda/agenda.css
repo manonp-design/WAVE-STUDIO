@@ -106,6 +106,76 @@ header img{
 .nav-link:hover::after{
     transform: scaleX(1);
 }
+/* ******************* DIARY ***************** */
+
+.calendrier{
+    font-family:'Montserrat', sans-serif;
+    background-color: black;
+    height: 200px;
+}
+
+.calendrier caption{
+    background-color: #ff4219;
+    height: 120px;
+    color:#ffffff;
+    text-align: center;
+    padding: 38px 28px;
+    font-size: 200%;
+    text-transform: uppercase;
+    line-height: 1;*/
+}
+
+.calendrier thead{
+    color:#000000;
+    font-size: 100%;
+}
+
+.huge{
+    font-size: 230%;
+    display: block;
+    text-align: center;
+}
+
+.calendrier thead th{
+    color: white;
+    font-weight: bold;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+.calendrier td, .calendrier th{
+    text-align: center;
+    padding: .8em;
+    padding-bottom: 2em;
+}
+.jourj{
+    background-color: #ff4219;
+    color: white;
+}
+.day{
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    padding: .5em;
+    border-radius: 100%;
+    transition: all .5s;
+}
+.day:hover{
+    cursor: pointer;
+    background-color: indigo;
+    border-radius: 0%;
+}
+
+
+
+
+
+
+
+
+
+
 /* ******************* Me permet de mettre le footer en bas de page ******************* */
 
 main{
@@ -182,7 +252,7 @@ img{
 
 #videoaccueil {
 
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
 

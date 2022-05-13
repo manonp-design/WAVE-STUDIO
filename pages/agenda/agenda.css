@@ -2,7 +2,6 @@
 
 *{
     margin: 0px;
-   
 }
 
 body{
@@ -11,12 +10,10 @@ body{
     color: #ffffff;
 }
 
-
-
 header{
-
     position: absolute;
 }
+
 header img{
     margin-left: 10px;
     width: 100px; 
@@ -106,23 +103,25 @@ header img{
 .nav-link:hover::after{
     transform: scaleX(1);
 }
-/* ******************* DIARY ***************** */
+/* ******************* agenda ***************** */
+.diary{
+    border: 6px solid pink;
+    width: 700px;
 
+}
 .calendrier{
+    border: 2px solid blue;
     font-family:'Montserrat', sans-serif;
     background-color: black;
-    height: 200px;
 }
 
 .calendrier caption{
+    border:2px solid yellow;
     background-color: #ff4219;
-    height: 120px;
     color:#ffffff;
     text-align: center;
-    padding: 38px 28px;
     font-size: 200%;
     text-transform: uppercase;
-    line-height: 1;*/
 }
 
 .calendrier thead{

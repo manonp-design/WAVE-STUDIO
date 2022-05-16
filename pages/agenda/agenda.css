@@ -154,8 +154,9 @@ header img{
 .jourj{
     background-color: #ff4219;
     color: white;
-    overflow: hidden;
+
 }
+
 .day{
     display: inline-block;
     width: 2em;
@@ -164,11 +165,6 @@ header img{
     padding: .5em;
     border-radius: 100%;
     transition: all .5s;
-}
-.day:hover{
-    cursor: pointer;
-    background-color: indigo;
-    border-radius: 0%;
 }
 
 /* ******************* Me permet de mettre le footer en bas de page ******************* */

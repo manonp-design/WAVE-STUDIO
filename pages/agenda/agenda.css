@@ -263,3 +263,28 @@ img{
 
     
     }
+
+    /* Scrollbar_Style*/
+
+  /*Firefox*/
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ff4219 black;
+  }
+
+  /*Chrome, Edge, and Safari*/
+  *::-webkit-scrollbar {
+    
+    width: 3px;
+    height: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ff4219;
+  }
+
+/*Scrollbar_Style */

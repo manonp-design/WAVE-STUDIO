@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="UFT-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Wave Studio</title>
@@ -44,41 +44,47 @@
             <script src="contact.js"></script>
         </header>
 
-       
 
 
-      <main>
+
+    <main>
         <div id="videoaccueil">
             <video src="../../videos/Composition.mp4" autoplay loop muted></video>
         </div>
-          <div>
-
-            
-          </div>
-        <div class="conteneur-form">
-            <form>
-            <h3>Contactez-nous !</h3>
-            <div>
-                <input type="text" id="nom" placeholder="Inscrivez votre nom"/>
-                <label for="nom">Nom</label>
+        <div class="responsive-contenu">
+            <div class="conteneur-contact">
+                <div class="reseaux-sociaux-contact">
+                    <a href="https://www.instagram.com/"target="_blank"><img src="../../images/contact_instagram.png" alt="Lien vers le réseau social Instagram"></a>
+                    <a href="https://www.facebook.com/"target="_blank"><img src="../../images/contact_facebook.png" alt="Lien vers le réseau social Facebook"></a>
+                    <a href="https://www.youtube.com/"target="_blank"><img src="../../images/contact_youtube.png" alt="Lien vers le réseau social Youtube"></a>
+                    <a href="https://www.tiktok.com/"target="_blank"><img src="../../images/contact_tiktok.png" alt="Lien vers le réseau social TikTok"></a>
+                </div>
+                <div class="trait-vertical"></div>
+                <!-- <div class="conteneur-form"> -->
+                    <form>
+                        <h3>Contactez-nous !</h3>
+                        <div>
+                            <input type="text" id="prenom" placeholder="Inscrivez votre prénom"/>
+                            <label for="prenom">Prénom</label>
+                        </div>
+                        <div>
+                            <input type="text" id="nom" placeholder="Inscrivez votre nom"/>
+                            <label for="nom">Nom</label>
+                        </div>
+                        <div>
+                            <input type="text" id="mail" placeholder="Inscrivez votre e-mail"/>
+                            <label for="mail">Mail</label>
+                        </div>
+                        <div>
+                            <textarea id="message" placeholder="Tapez ici votre message"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <input class ="bouton" type="submit" value="Envoyer"/>
+                    </form>
+                <!-- </div> -->
             </div>
-            <div>
-                <input type="text" id="prenom" placeholder="Inscrivez votre prénom"/>
-                <label for="prenom">Prénom</label>
-            </div>
-            <div>
-                <input type="text" id="mail" placeholder="Inscrivez votre e-mail"/>
-                <label for="mail">Mail</label>
-            </div>
-            <div>
-                <textarea id="message" placeholder="Tapez ici votre message"></textarea>
-                <label for="message">Message</label>
-            </div>
-            <input class ="bouton" type="submit" value="Envoyer"/>
-        </form>
         </div>
-        
-      </main>
+    </main>
 
         <footer class="contenu-footer">
             <div class="logo-footer">

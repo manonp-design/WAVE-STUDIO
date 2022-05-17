@@ -12,14 +12,13 @@ body{
 }
 
 header{
-     position: absolute;
+    position: absolute;
     }
 
 header img{
     margin-left: 10px;
     width: 100px; 
     height: 100px;
-  
 }
 
 /***********MENU BURGER*******/
@@ -106,25 +105,72 @@ header img{
     transform: scaleX(1);
 }
 
-/* ******************* Formulaire de contact ******************* */
-.conteneur-form{
-    
+/* ******************* Contenu de la page contact ******************* */
+
+.conteneur-contact{
+    position: absolute;
+    z-index: 0;
+    width: 90%;
+    /* border: 2px solid green; */
+
+    top: 150px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.reseaux-sociaux-contact{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    margin-top: -150px;
+
+    /* border: 2px solid green; */
+    width: 200px;
+    height: 200px;
+}
+
+.reseaux-sociaux-contact img{
+    width: 80px;
+    height: 80px;
+}
+
+.responsive-contenu{
+    width: 100%;
+}
+
+                /* ******** Ligne verticale ******** */
+
+.trait-vertical{
+    background-color: #ff4219;
+    width: 5px;
+    height: 350px;
+    margin-left: 100px;
+    margin-top: -150px;
+    /* border: 2px solid green; */
+}
+
+                /* ******** Formulaire de contact ******** */
+
+/* .conteneur-form{
     width: 800px;
     margin: 0 auto;
-   
-}
+} */
+
 form{
-    position: absolute;
-    width: 800px;
+    width: 600px;
     
-    border-top: 15px solid #ff4219;
+    /* border-top: 15px solid #ff4219; */
     background: none;
     padding: 0 20px 60px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: #ffffff;
-     z-index: 0;
 }
 
 form h3{
@@ -140,8 +186,8 @@ form div{
 }
 
 form div input, textarea{
-    width: 78%;
-    height: 100%;
+    width: 77%;
+    height: 98%;
     opacity: 0.9;
     padding-left: 22%;
     background-color: #333333;
@@ -149,6 +195,7 @@ form div input, textarea{
     border: 0;
     outline: none;
     margin: 0;
+    text-align: center;
 }
 
 form div label{
@@ -157,7 +204,7 @@ form div label{
     top: -50px;
     width: 100%;
     height: 100%;
-    background-color: #ff4219;
+    background-color:#ff4219;
     position: relative;
     line-height: 50px;
     font-size: 18px;
@@ -175,7 +222,7 @@ label{transition: all 0.3s ease-in-out, width 1.1s ease-in-out;}
 label{transition: all 0.3s ease-in-out, width 1.3s ease-in-out;} */
 
 form div:hover label, form div input:focus + label, form div textarea:focus + label, .labelOuvert{
-    width: 20%;
+    width: 25%;
 }
 
 form div input:focus + label, form div textarea:focus + label{
@@ -191,7 +238,7 @@ form div input:focus + label, form div textarea:focus + label{
     text-transform: uppercase;
     color: #ffffff;
     font-size: 15px;
-    margin-top: 35px;
+    margin-top: 100px;
 }
 
 form div textarea{
@@ -205,7 +252,7 @@ form div textarea + label{
 }
 
 form div textarea:focus, .messOuvert textarea{
-    height: 150px;
+    height: 148px;
 }
 
 form div textarea:focus + label,.messOuvert label{
@@ -225,7 +272,6 @@ main{
     min-height: 100%;
     position: relative;
     z-index: -100;
-  
 }
 
 /* ******************* Footer ******************* */
@@ -294,6 +340,9 @@ img{
     font-size: 0.8em;
 }
 
+
+/* ******************* Vidéo ******************* */
+
 #videoaccueil {
 
     position: absolute;
@@ -315,3 +364,45 @@ img{
     min-width: 100%;
     min-height: 100%;
 }   
+
+/* Scrollbar_Style*/
+
+  /*Firefox*/
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ff4219 black;
+  }
+
+  /*Chrome, Edge, and Safari*/
+  *::-webkit-scrollbar {
+    
+    width: 3px;
+    height: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ff4219;
+  }
+
+/*Scrollbar_Style */
+
+
+
+
+/* ******************* Responsive ******************* */
+
+/* @media screen and (max-width: 600px){
+    .conteneur-contact{
+        flex-direction: column-reverse;
+    }
+    .trait-vertical{
+        display: none;
+    }
+    .reseaux-sociaux-contact{
+        flex-direction: column;
+    }
+} */

@@ -2,7 +2,6 @@
 
 *{
     margin: 0px;
-   
 }
 
 body{
@@ -104,6 +103,94 @@ header img{
 .nav-link:hover::after{
     transform: scaleX(1);
 }
+
+/* ******************* Studio ******************* */
+
+.studio{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 220px;
+    margin-left: 100px;
+    padding-top: 100px;
+}
+
+.a-propos{
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    margin-top: 120px;
+}
+
+.a-propos h2{
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff4219;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.a-propos p{
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 40px;
+}
+
+.trait-vertical{
+    background-color: #ff4219;
+    width: 5px;
+    height: 550px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 1px;
+    /* border: 2px solid green; */
+}
+
+.studio-personnes{
+    display: flex;
+    flex-direction: column;
+}
+
+.personnes{
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: black;
+    width: 300px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.personnes img{
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.personnes h3{
+    text-align: center;
+    color: #ff4219;
+    padding-top: 10px;
+}
+
+.personnes p{
+    text-align: center;
+    padding-top: 10px;
+    line-height: 25px;
+}
+
+.photo{
+    width: auto;
+    height: 100px;
+}
+
+
 /* ******************* Me permet de mettre le footer en bas de page ******************* */
 
 main{
@@ -178,9 +265,12 @@ img{
     font-size: 0.8em;
 }
 
+
+/* ******************* Vidéo ******************* */
+
 #videoaccueil {
 
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
 
@@ -200,3 +290,28 @@ img{
 
     
     }
+
+    /* Scrollbar_Style*/
+
+  /*Firefox*/
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ff4219 black;
+  }
+
+  /*Chrome, Edge, and Safari*/
+  *::-webkit-scrollbar {
+    
+    width: 3px;
+    height: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ff4219;
+  }
+
+/*Scrollbar_Style */

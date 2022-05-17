@@ -111,16 +111,16 @@ header img{
     font-size: 70px;
     font-family: 'Montserrat' sans-serif;
     opacity: 0;
-   
 } 
+
 .galerie{
     display: flex;
     justify-content: center;
-    flex-wrap : wrap;
+    flex-wrap: wrap;
     width: 80%;
     max-width: 1300px;
-    margin : 0 auto 0;
-    /* background: white;     */
+    margin: 0 auto 0;
+    
 }
 .item{
     width: 400px;
@@ -128,20 +128,12 @@ header img{
     margin: 5px;
     overflow: hidden;
 }
+
 .item img{
+    display: block;
     width: 100%;
     height: auto;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -241,3 +233,28 @@ img{
 
     
     }
+
+    /* Scrollbar_Style*/
+
+  /*Firefox*/
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ff4219 black;
+  }
+
+  /*Chrome, Edge, and Safari*/
+  *::-webkit-scrollbar {
+    
+    width: 3px;
+    height: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ff4219;
+  }
+
+/*Scrollbar_Style */

@@ -2,7 +2,6 @@
 
 *{
     margin: 0px;
-   
 }
 
 body{
@@ -15,7 +14,7 @@ header{
     position: absolute;
 }
 header img{
-  margin-left: 10px;
+    margin-left: 10px;
     width: 100px; 
     height: 100px;
 }
@@ -103,6 +102,76 @@ header img{
 .nav-link:hover::after{
     transform: scaleX(1);
 }
+
+/* ******************* Actus ******************* */
+
+
+.actu{
+    /* border: 2px solid purple; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 220px;
+    margin-left: 100px;
+    padding-top: 200px;
+}
+
+.contenu-actu1{
+    border: 3px solid white;
+    width: 500px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.contenu-actu1 h2{
+    text-align: center;
+    color: #ff4219; 
+    font-size: 3em;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.contenu-actu1 p{
+    text-align: center;
+    font-size: 1.4em;
+    padding-bottom: 35px;
+    line-height: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.contenu-dance{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.contenu-actu{
+    border: 3px solid rgb(255, 255, 255);
+    width: 500px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    background-color: black;
+    border-radius: 10px;
+}
+.contenu-actu h2{
+    text-align: center;
+    color: #ff4219; 
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.contenu-actu p{
+    text-align: center;
+    font-size: 1em;
+    padding-bottom: 14px;
+}
+
+
 /* ******************* Me permet de mettre le footer en bas de page ******************* */
 
 main{
@@ -177,9 +246,12 @@ img{
     font-size: 0.8em;
 }
 
+
+/* ******************* Vidéo ******************* */
+
 #videoaccueil {
 
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
 
@@ -199,3 +271,28 @@ img{
 
     
     }
+
+    /* Scrollbar_Style*/
+
+  /*Firefox*/
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ff4219 black;
+  }
+
+  /*Chrome, Edge, and Safari*/
+  *::-webkit-scrollbar {
+    
+    width: 3px;
+    height: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ff4219;
+  }
+
+/*Scrollbar_Style */
